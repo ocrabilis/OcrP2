@@ -4,11 +4,11 @@
 	}
          
 *{
-	margin-left: 1%;
 	font-family: 'Raleway';
 	font-size: large;		
 	}
 .head{
+	margin-left: 1%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -40,36 +40,43 @@ td.insc{
 	width: 100px;
 	height: 60px;
 	}
+main{
+	margin-left: 1%;
+}
 h1{
 	font-size: larger;
 	font-weight: 1400;
 	}
-Form{
-	display:flex;
-	justify-content: start;
-	}
-label.recherche{
 
-	}
-
- 
-i{
-	
-	color: rgb(16, 108, 246);
-
+form#RechVille{
+	padding: 18px;
 }
+
+#iconeRecherche{	
+	color: black;
+	background-color: rgb(221, 221, 221);
+	border-radius: 15px 0px 0px 15px;
+	padding: 18px;
+}
+#champRecherche{
+	font-weight: bold;
+	border: 3px solid rgb(221, 221, 221);
+	padding: 15px;
+}
+#boutonRechercher{
+	color: white;
+	font-weight: bold;
+	background-color: rgb(16, 108, 246);
+	border-radius: 0px 15px 15px 0px;
+	padding: 18px;
+	border: 0px;
+	
+}
+
 div.filtre{
 	border-radius: 30px;
 	border:1px solid grey;
 }
-#ville{
-	font-weight: bold;
-}
-
-#rechercher{
-	font-weight: bold;
-}
-
 .filtres{
 	display: flex;
 	justify-content: space-around;
@@ -78,7 +85,7 @@ div.filtre{
 	background-color: rgb(199, 195, 195);
 	border: radius 30px;
 	display: flex;
-}*/
+}
 #heberMar{
 	background-color: rgb(199, 195, 195);
 	border-radius: 30px;
@@ -100,4 +107,4 @@ figure.hebergements img{
 	display: flex;
 	flex-direction: row;
 	flex-wrap:wrap;
-}
+}*/
