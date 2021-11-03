@@ -1,55 +1,63 @@
 @font-face {
-    font-family: 'Raleway';
+	font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf') format('truetype');
-	}
-         
+}
+
 *{
 	font-family: 'Raleway';
-	font-size: large;		
-	}
+	font-size: large;
+	
+}
+h1{
+	font-size: 130%;
+	font-weight:1000;	
+}
+a:hover {
+	font-style: italic;
+}
 .head{
 	margin-left: 1%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	}
-table.nav{
+}
+ul#nav{
 	width: 33%;
 	height: 70px;
-	}
-
-td.heber{
+	list-style: none;
+	display: flex;
+}
+li.heber{
+	vertical-align: middle;
 	border-top: 3px solid rgb(16, 108, 246);
 	color:  rgb(16, 108, 246);
 	width: 33%;
 	height: 70px;
 	text-align: center;
-	}
-td.acti{	
+;
+
+}
+li.acti{	
 	width: 33%;
 	height: 70px;
 	text-align: center;
-	}	
-td.insc{
+}	
+li.insc{
 	color:  rgb(16, 108, 246);
 	width: 33%;
 	height: 70px;
 	text-align: center;
-	}
+}
 #logo{
 	width: 100px;
 	height: 60px;
-	}
+}
 main{
 	margin-left: 1%;
 }
-h1{
-	font-size: larger;
-	font-weight: 1400;
-	}
-
-form#RechVille{
-	padding: 18px;
+ul#RechVille{
+	list-style: none;
+	display: flex;
 }
 
 #iconeRecherche{	
@@ -57,6 +65,7 @@ form#RechVille{
 	background-color: rgb(221, 221, 221);
 	border-radius: 15px 0px 0px 15px;
 	padding: 18px;
+	line-height:21px;
 }
 #champRecherche{
 	font-weight: bold;
@@ -69,42 +78,261 @@ form#RechVille{
 	background-color: rgb(16, 108, 246);
 	border-radius: 0px 15px 15px 0px;
 	padding: 18px;
-	border: 0px;
+	border: 0px;	
+}
+div.filtres{	
+	display: flex;
+	width: 80%;
+	justify-content: left;
+	block-size: 50px;
+
+}
+#choix{
+	font-weight: bold;
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	align-items: center;
 	
 }
-
-div.filtre{
-	border-radius: 30px;
-	border:1px solid grey;
+#lesFiltres{
+	padding: 15px;
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
 }
-.filtres{
+span.filtre{
+	font-weight: bold;
+	border-radius: 45px;
+	border:3px solid rgb(204, 204, 204);
+}
+.icone{
+	color: rgb(16, 108, 246);
+	background-color: rgb(191, 191, 255);
+    border-radius: 50%;
+   	padding-left: 17px;
+	padding-right: 17px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+.iconeEco{
+	color: rgb(16, 108, 246);
+	background-color: rgb(191, 191, 255);
+    border-radius: 50%;
+   	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+.iconeFam{
+	color: rgb(16, 108, 246);
+	background-color: rgb(191, 191, 255);
+    border-radius: 150%;
+   	padding-left: 19px;
+	padding-right: 19px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+span.nomFiltre{
+	padding-right: 19px;
+}
+#info{
+	color: rgb(16, 108, 246);
+	border:2px solid rgb(204, 204, 204);
+	border-radius: 50px;
+	padding-top: 3px;
+	padding-right: 9px;
+	padding-bottom: 3px;
+	padding-left: 9px;
+
+}/*étoiles*/
+.bleue{
+	color: rgb(16, 108, 246);
+}
+.grise{
+	color: rgb(221, 221, 221);	
+}
+section#ville{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
-/*div.section1{
-	background-color: rgb(199, 195, 195);
-	border: radius 30px;
-	display: flex;
-}
-#heberMar{
-	background-color: rgb(199, 195, 195);
+.heberVille{
+	background-color: rgb(233, 233, 233);
 	border-radius: 30px;
+	width: 60%;
+	height: 600px;
+	padding: 30px;
 
 }
-
+.listeSpots{	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
 figure.hebergements{
+	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
 	padding: 5px;
-	width: 100px;
+	margin-top: 20px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	height: 200px;
+	width: 270px;
 
 }
 figure.hebergements img{
 	border-radius: 30px 30px 0 0;
-	width: 200px;
+	height: 120px;
+	width: 270px;
 }
-.liste-spots{
+figcaption.descripHeber{
+	padding: 5px;
+	margin: 0%;
+}
+.nomHeber{
+font-weight: bolder;
+}
+.populaireVille{
+	background-color: rgb(233, 233, 233);
+	border-radius: 30px;
+	width: 30%;
+	height: 600px;
+	padding: 30px;
+}
+.listPopu{	
 	display: flex;
-	flex-direction: row;
-	flex-wrap:wrap;
-}*/
+	flex-wrap: wrap;
+}
+figure.poulaires{
+	display:inline-flex;
+	justify-content: left;
+	background-color: white;
+	border-radius: 30px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	height: 140px;
+	width: 430px;
+}
+figure.poulaires img{
+	border-radius: 30px 0 0 30px;
+	height: 140px;
+	width: 135px;
+}
+.textNoteDescipPopu{
+	display: flex;
+	flex-direction : column;
+	justify-content: space-between;
+	height: 140px;
+	padding-left: 15px;
+}
+section#activitesVille{
+	height: 600px;
+	margin-top: 10px;
+	padding: 30px;
+}
+.listActiv{
+	display: flex;
+	flex-flow: column wrap;
+	height: 600px;
+
+}
+figure.activite1{
+	justify-content: center;
+	background-color: white;
+	border-radius: 30px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	width: 300px;
+	height: 500px;
+	box-shadow:0px 20px 50px -40px;
+}
+figure.activite1 img{
+	border-radius: 30px 30px 0 0;
+	width: 300px;
+	height: 450px;
+}
+figure.activite2{
+	justify-content: center;
+	background-color: white;
+	border-radius: 30px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	width: 300px;
+	height: 270px;
+	box-shadow:0px 20px 50px -40px;
+}
+figure.activite2 img{
+	border-radius: 30px 30px 0 0;
+	width: 300px;
+	height: 220px;
+}
+figure.activite3{
+	justify-content: center;
+	background-color: white;
+	border-radius: 30px 30px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	width: 300px;
+	height: 200px;
+	box-shadow:0px 20px 50px -40px;
+}
+figure.activite3 img{
+	border-radius: 30px 30px 0 0;
+	width: 300px;
+	height: 150px;
+}
+figure.activite4{
+	justify-content: center;
+	background-color: white;
+	border-radius: 30px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	width: 300px;
+	height: 260px;
+	box-shadow:0px 20px 50px -40px;
+}
+figure.activite4 img{
+	border-radius: 30px 30px 0 0;
+	width: 300px;
+	height: 210px;
+}
+figure.activite5{
+	justify-content: center;
+	background-color: white;
+	border-radius: 30px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	width: 300px;
+	height: 220px;
+	box-shadow:0px 20px 50px -40px;
+}
+figure.activite5 img{
+	border-radius: 30px 30px 0 0;
+	width: 300px;
+	height: 170px;
+}
+figcaption.nomActi{
+	padding: 5px;
+	font-weight: bolder;
+}
+
