@@ -26,12 +26,14 @@ ul#nav{
 	height: 70px;
 	list-style: none;
 	display: flex;
+	font-weight: bold;
 }
 li.heber{
-	vertical-align: middle;
+
 	border-top: 3px solid rgb(16, 108, 246);
 	color:  rgb(16, 108, 246);
 	width: 33%;
+	padding-top: 30px;
 	height: 70px;
 	text-align: center;
 ;
@@ -41,12 +43,14 @@ li.acti{
 	width: 33%;
 	height: 70px;
 	text-align: center;
+	padding-top: 30px;
 }	
 li.insc{
 	color:  rgb(16, 108, 246);
 	width: 33%;
 	height: 70px;
 	text-align: center;
+	padding-top: 30px;
 }
 #logo{
 	width: 100px;
@@ -169,6 +173,11 @@ section#ville{
 	flex-wrap: wrap;
 	justify-content:space-between;
 }
+div#titre{
+	display: flex;
+	justify-content: space-between;
+
+}
 figure.hebergements{
 	justify-content: center;
 	background-color: white;
@@ -239,7 +248,6 @@ section#activitesVille{
 	display: flex;
 	flex-flow: column wrap;
 	height: 600px;
-
 }
 figure.activite1{
 	justify-content: center;
@@ -335,4 +343,18 @@ figcaption.nomActi{
 	padding: 5px;
 	font-weight: bolder;
 }
-
+div#pied{
+	background-color: rgb(233, 233, 233);
+	display: flex;
+	justify-content: space-evenly;
+	height: 180px;
+	padding-top: 30px;
+}
+li.type{
+	font-weight: bold;
+	list-style: none;
+	padding-bottom: 10px;
+}
+li.page{
+	list-style: none;
+}
