@@ -2,6 +2,43 @@
 	font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf') format('truetype');
 }
+@media screen and (max-width:  992px)
+{
+	h1{
+		color: red;
+		font-size: 130%;
+		font-weight:1000;	
+	}
+	.heberVille{
+		background-color: #F2F2F2;
+		border-radius: 30px;
+		width: 100%;
+		height: 615px;
+		padding: 30px;
+		overflow: auto;
+	}
+	.listeSpots{	
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:space-between;
+	}
+	.populaireVille{
+		background-color: #F2F2F2;
+		border-radius: 30px;
+		width: 100%;
+		height: 615px;
+		padding: 30px;
+		overflow: auto;
+	}
+}
+@media  (max-width: 768px)
+{
+	h1{
+		color: green;
+		font-size: 130%;
+		font-weight:1000;	
+	}
+}
 
 *{
 	font-family: 'Raleway';
@@ -15,6 +52,9 @@ h1{
 a:hover {
 	font-style: italic;
 }
+/*******
+**Tête**
+********/
 .head{
 	margin-left: 1%;
 	display: flex;
@@ -30,13 +70,12 @@ ul#nav{
 }
 li.heber{
 
-	border-top: 3px solid rgb(16, 108, 246);
-	color:  rgb(16, 108, 246);
+	border-top: 3px solid #0065FC;
+	color: #0065FC;
 	width: 33%;
 	padding-top: 30px;
 	height: 70px;
 	text-align: center;
-;
 
 }
 li.acti{	
@@ -46,7 +85,7 @@ li.acti{
 	padding-top: 30px;
 }	
 li.insc{
-	color:  rgb(16, 108, 246);
+	color: #0065FC;
 	width: 33%;
 	height: 70px;
 	text-align: center;
@@ -59,31 +98,32 @@ li.insc{
 main{
 	margin-left: 1%;
 }
+/*recherche de ville*/
 ul#RechVille{
 	list-style: none;
 	display: flex;
 }
-
 #iconeRecherche{	
 	color: black;
-	background-color: rgb(221, 221, 221);
+	background-color: #F2F2F2;
 	border-radius: 15px 0px 0px 15px;
 	padding: 18px;
 	line-height:21px;
 }
 #champRecherche{
 	font-weight: bold;
-	border: 3px solid rgb(221, 221, 221);
+	border: 3px solid #F2F2F2;
 	padding: 15px;
 }
 #boutonRechercher{
 	color: white;
 	font-weight: bold;
-	background-color: rgb(16, 108, 246);
+	background-color: #0065FC;
 	border-radius: 0px 15px 15px 0px;
 	padding: 18px;
 	border: 0px;	
 }
+/*Filtres*/
 div.filtres{	
 	display: flex;
 	width: 80%;
@@ -96,8 +136,7 @@ div.filtres{
 	display: flex;
 	width: 90%;
 	justify-content: space-between;
-	align-items: center;
-	
+	align-items: center;	
 }
 #lesFiltres{
 	padding: 15px;
@@ -108,11 +147,14 @@ div.filtres{
 span.filtre{
 	font-weight: bold;
 	border-radius: 45px;
-	border:3px solid rgb(204, 204, 204);
+	border:3px solid #F2F2F2;
+}
+span.filtre:hover{
+	background-color: #DEEBFF;
 }
 .icone{
-	color: rgb(16, 108, 246);
-	background-color: rgb(191, 191, 255);
+	color: #0065FC;
+	background-color: #DEEBFF;
     border-radius: 50%;
    	padding-left: 17px;
 	padding-right: 17px;
@@ -120,8 +162,8 @@ span.filtre{
 	padding-bottom: 17px;
 }
 .iconeEco{
-	color: rgb(16, 108, 246);
-	background-color: rgb(191, 191, 255);
+	color: #0065FC;
+	background-color: #DEEBFF;
     border-radius: 50%;
    	padding-left: 15px;
 	padding-right: 15px;
@@ -129,8 +171,8 @@ span.filtre{
 	padding-bottom: 17px;
 }
 .iconeFam{
-	color: rgb(16, 108, 246);
-	background-color: rgb(191, 191, 255);
+	color: #0065FC;
+	background-color: #DEEBFF;
     border-radius: 150%;
    	padding-left: 19px;
 	padding-right: 19px;
@@ -141,8 +183,8 @@ span.nomFiltre{
 	padding-right: 19px;
 }
 #info{
-	color: rgb(16, 108, 246);
-	border:2px solid rgb(204, 204, 204);
+	color:#0065FC;
+	border:2px solid #F2F2F2;
 	border-radius: 50px;
 	padding-top: 3px;
 	padding-right: 9px;
@@ -151,27 +193,33 @@ span.nomFiltre{
 
 }/*étoiles*/
 .bleue{
-	color: rgb(16, 108, 246);
+	color:#0065FC;
 }
 .grise{
-	color: rgb(221, 221, 221);	
+	color: #F2F2F2;	
 }
-section#ville{
-	display: flex;
-	justify-content: space-between;
-}
-.heberVille{
-	background-color: rgb(233, 233, 233);
-	border-radius: 30px;
-	width: 60%;
-	height: 600px;
-	padding: 30px;
-
-}
-.listeSpots{	
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-between;
+/***************
+**Hébergements**
+***************/
+@media screen and (min-width:  993px)
+{
+	section#ville{
+		display: flex;
+		justify-content: space-between;
+	}
+	.heberVille{
+		background-color: #F2F2F2;
+		border-radius: 30px;
+		width: 60%;
+		height: 615px;
+		padding: 30px;
+		overflow: auto;
+	}
+	.listeSpots{	
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:space-between;
+	}
 }
 div#titre{
 	display: flex;
@@ -203,17 +251,24 @@ figcaption.descripHeber{
 .nomHeber{
 font-weight: bolder;
 }
-.populaireVille{
-	background-color: rgb(233, 233, 233);
-	border-radius: 30px;
-	width: 30%;
-	height: 600px;
-	padding: 30px;
+/***************
+**Populaires****
+***************/
+@media screen and (min-width:  993px)
+{
+	.populaireVille{
+		background-color: #F2F2F2;
+		border-radius: 30px;
+		width: 30%;
+		height: 615px;
+		padding: 30px;
+		overflow: auto;
+	}
 }
-.listPopu{	
-	display: flex;
-	flex-wrap: wrap;
-}
+	.listPopu{	
+		display: flex;
+		flex-wrap: wrap;
+	}
 figure.poulaires{
 	display:inline-flex;
 	justify-content: left;
@@ -239,6 +294,9 @@ figure.poulaires img{
 	height: 140px;
 	padding-left: 15px;
 }
+/************
+**Activités**
+*************/
 section#activitesVille{
 	height: 600px;
 	margin-top: 10px;
@@ -248,6 +306,7 @@ section#activitesVille{
 	display: flex;
 	flex-flow: column wrap;
 	height: 600px;
+	overflow: auto;
 }
 figure.activite1{
 	justify-content: center;
@@ -343,8 +402,11 @@ figcaption.nomActi{
 	padding: 5px;
 	font-weight: bolder;
 }
+/*******
+**Pied**
+********/
 div#pied{
-	background-color: rgb(233, 233, 233);
+	background-color: #F2F2F2;
 	display: flex;
 	justify-content: space-evenly;
 	height: 180px;
