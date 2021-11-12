@@ -12,6 +12,18 @@
 		font-size: 130%;
 		font-weight:1000;	
 	}
+	div#pages{
+		width: 50%;
+		display: flex;
+		justify-content: right;
+	}
+	ul#nav{
+		width: 60%;
+		height: 70px;
+		list-style: none;
+		display: flex;
+		font-weight: bold;
+	}
 	.heberVille{
 		background-color: #F2F2F2;
 		border-radius: 30px;
@@ -44,6 +56,32 @@
 		font-size: 130%;
 		font-weight:1000;	
 	}
+	div.head{
+		margin-left: 1%;
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	.head :nth-child(2) { order: 3; }
+	div#pages{
+		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+	
+	ul#nav{
+		height: 70px;
+		list-style: none;
+		display: flex;
+		font-weight: bold;
+	}
+	span.insc{
+		color: #0065FC;
+		height: 70px;
+		width: 60%;
+		padding-top: 33px;
+		text-align: right;
+	}
 }
 
 *{
@@ -68,20 +106,22 @@ a:hover {
 	justify-content: stretch;
 }
 #logo{
-	width: 10%;
-	height: 60px;
-}
-div#pages{
-	width: 80%;
-	display: flex;
-	justify-content: right;
-}
-ul#nav{
-	width: 30%;
+	width: 150px;
 	height: 70px;
-	list-style: none;
-	display: flex;
-	font-weight: bold;
+}
+@media screen and (min-width:  992px){
+	div#pages{
+		width: 77%;
+		display: flex;
+		justify-content: right;
+	}
+	ul#nav{
+		width: 30%;
+		height: 70px;
+		list-style: none;
+		display: flex;
+		font-weight: bold;
+	}
 }
 li.heber{
 	border-top: 3px solid #0065FC;
@@ -96,13 +136,14 @@ li.acti{
 	padding-top: 33px;
 	height: 70px;
 	text-align: center;
-}	
+}
+@media screen and (min-width:  768px){
 span.insc{
 	color: #0065FC;
-	width: 10%;
+	width: 13%;
 	height: 70px;
 	margin-top: 18px;
-	padding-top: 30px;
+	padding-top: 33px;
 	text-align: center;
 }
 
