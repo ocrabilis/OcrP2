@@ -2,6 +2,9 @@
 	font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf') format('truetype');
 }
+/******************
+**Format tablette**
+*******************/
 @media screen and (max-width:  992px)
 {
 	h1{
@@ -31,6 +34,9 @@
 		overflow: auto;
 	}
 }
+/********************
+**Format smartphone**
+*********************/
 @media  (max-width: 768px)
 {
 	h1{
@@ -59,42 +65,47 @@ a:hover {
 	margin-left: 1%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: stretch;
+}
+#logo{
+	width: 10%;
+	height: 60px;
+}
+div#pages{
+	width: 80%;
+	display: flex;
+	justify-content: right;
 }
 ul#nav{
-	width: 33%;
+	width: 30%;
 	height: 70px;
 	list-style: none;
 	display: flex;
 	font-weight: bold;
 }
 li.heber{
-
 	border-top: 3px solid #0065FC;
 	color: #0065FC;
-	width: 33%;
+	width: 50%;
 	padding-top: 30px;
 	height: 70px;
 	text-align: center;
-
 }
-li.acti{	
-	width: 33%;
+li.acti{
+	width: 50%;
+	padding-top: 33px;
 	height: 70px;
 	text-align: center;
-	padding-top: 30px;
 }	
-li.insc{
+span.insc{
 	color: #0065FC;
-	width: 33%;
+	width: 10%;
 	height: 70px;
-	text-align: center;
+	margin-top: 18px;
 	padding-top: 30px;
+	text-align: center;
 }
-#logo{
-	width: 100px;
-	height: 60px;
-}
+
 main{
 	margin-left: 1%;
 }
@@ -201,35 +212,35 @@ span.nomFiltre{
 /***************
 **Hébergements**
 ***************/
-@media screen and (min-width:  993px)
-{
-	section#ville{
-		display: flex;
-		justify-content: space-between;
-	}
-	.heberVille{
-		background-color: #F2F2F2;
-		border-radius: 30px;
-		width: 60%;
-		height: 615px;
-		padding: 30px;
-		overflow: auto;
-	}
-	.listeSpots{	
-		display: flex;
-		flex-wrap: wrap;
-		justify-content:space-between;
-	}
+section#ville{
+	display: flex;
+	justify-content: space-between;
 }
+.heberVille{
+	background-color: #F2F2F2;
+	border-radius: 30px;
+	width: 60%;
+
+	padding: 30px;
+	overflow: auto;
+}
+.listeSpots{	
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	}
 div#titre{
 	display: flex;
 	justify-content: space-between;
 
 }
 figure.hebergements{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
+	border:5px white;
 	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
@@ -237,14 +248,18 @@ figure.hebergements{
 	margin-bottom: 0%;
 	height: 200px;
 	width: 270px;
+	overflow: hidden;
+	
 
 }
 figure.hebergements img{
+	position: absolute;
 	border-radius: 30px 30px 0 0;
-	height: 120px;
-	width: 270px;
+	width: 300px;
 }
 figcaption.descripHeber{
+	position: absolute;
+	bottom: 0px;
 	padding: 5px;
 	margin: 0%;
 }
@@ -283,6 +298,7 @@ figure.poulaires{
 	width: 430px;
 }
 figure.poulaires img{
+	display: block;
 	border-radius: 30px 0 0 30px;
 	height: 140px;
 	width: 135px;
