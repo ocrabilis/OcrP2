@@ -4,39 +4,58 @@
 	<html lang="fr">
 	<title>Reservia</title>
 	<meta charset="utf-8" />
-<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-	<link rel="stylesheet" href="style.css">
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+	<link rel="stylesheet" media="(min-width: 993px)" href="style.css">
+	<link rel="stylesheet" media="(min-width: 769px) and (max-width: 993px)" href="style-t.css">
+	<link rel="stylesheet" media="(max-width: 768px)" href="style-s.css">
+	
 	<script src="https://kit.fontawesome.com/58858193c4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
+<!---------
+--- Tête --
+----------->
 		<div class="head">
 			<img id="logo" src="images/logo/Reservia@3x.png" alt="Logo Reservia" >							
 			<div id="pages">
 				<ul id="nav">
-					<li class="heber"> <a> Hébergement </a> </li>
-					<li class="acti"> <a> Activités </a> </li>				
+					<li class="active"> <a> Hébergement </a> </li>
+					<li> <a> Activités </a> </li>				
 				</ul>
 			</div>
 			<span class="insc"><a> S'inscrire </a></span>
 		</div>
 	</header>
 	<main>
+<!--------------------
+--- Recherche ville --
+---------------------->
 		<section class="recherche">
 			<h1> Trouvez votre hébergement pour des vacances de rêve</h1>			
 			<p> En plein centre ville ou en pleine nature</p>
 			<div classe="outilRecherche">
 				<ul id="RechVille">
-					<li><i class="fas fa-map-marker-alt" id="iconeRecherche"></i></li>					
-					<li><input type="search" name="ville" id="champRecherche" value="Marseille, France"/></li>
-					<li><button id="boutonRechercher">Rechercher</button></li>
+					<li>
+						<i class="fas fa-map-marker-alt" id="iconeRecherche">							
+						</i>
+					</li>					
+					<li>
+						<input type="search" name="ville" id="champRecherche" value="Marseille, France"/>
+					</li>
+					<li><button id="boutonRechercher">
+							<i class="fas fa-search" id="loupe"></i>
+							<span id="rechercher">Rechercher</span>
+						</button>
+					</li>
 				</ul>
-			<br/>
+			</div>
+			<!--- Les filtres -->
 			<div class="filtres">
-				<span id="lesFiltres">Filtres</span>
+				<h2 id="lesFiltres">Filtres</h2>
 				<div id="choix">
 					<span class="filtre">				
-						<i class="fas fa-money-bill-wave iconeEco" ></i>						
+						<i class="fas fa-money-bill-wave iconeEco" >						</i>						
 						<span class="nomFiltre"> Economique</span>
 					</span>
 					<span class="filtre">
@@ -51,13 +70,19 @@
 						<i class="fas fa-dog icone"></i>
 						<span class="nomFiltre"> Animaux autorisés</span>
 					</span>
-				</div>
+				</div>			
 			</div>
-			<p><span id="info"><i class="fas fa-info fa-sm"></i></span><span> Plus de 500 logements sont disponnibles dans cette ville</span></p>
-			<br/>
-			<br/>
+			<p class="nb">
+				<i class="fas fa-info fa-sm" id="info"></i>
+				<span> Plus de 500 logements sont disponnibles dans cette ville</span>
+			</p>			
 		</section>
+
+<!-----------------------
+--- Hebergements/ville --
+------------------------>
 		<section id="ville">
+<!--- Hebergements -->
 			<div class="heberVille">
 				<h1>Hébergements à Marseille</h1>
 				<div class="listeSpots">
@@ -162,6 +187,7 @@
 				<br/>
 				<a><strong> Afficher plus</strong></a>
 			</div>
+<!--- Populaires -->
 			<div class="populaireVille">	
 				<div id="titre">
 					<h1>Les plus populaires</h1>
@@ -225,12 +251,12 @@
 							</div>
 						</figcaption>
 					</figure>
-				</div>
-				
+				</div>		
 			</div>
 		</section>
-		<br/>
-		<br/>
+<!---------------------
+--- Acrivités/ville ---
+---------------------->
 		<section id="activitesVille">
 			<div class="activites">
 				<h1>Activités à Marseille</h1>
@@ -259,12 +285,13 @@
 						<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt ="photo">
 						<figcaption class="nomActi">Parc Lonchamp</figcaption>
 				</figure>
-				</div>
-					
+				</div>					
 			</div>
-		</section>
-		
+		</section>		
 	</main>
+<!---------
+--- Pied --
+----------->
 	<footer>
 		<div id="pied">
 			<div>

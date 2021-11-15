@@ -1,22 +1,19 @@
-/********************
-**** Format ordi ***
-*********************/
+/*********************
+*** Format tablette **
+**********************/
 
 @font-face {
 	font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf') format('truetype');
 }
+h1{
+    color: red;
+    font-size: 130%;
+    font-weight:1000;	
+}
 *{
 	font-family: 'Raleway';
 	font-size: large;	
-}
-h1{
-	font-size: 130%;
-	font-weight:1000;	
-}
-h2{
-	font-size: 120%;
-	font-weight:900;	
 }
 a:hover {
 	font-style: italic;
@@ -24,32 +21,31 @@ a:hover {
 main{
 	display: flex;
 	flex-wrap: wrap;
-
+	flex-direction: column;
 }
-/*******
-**Tête**
-********/
-.head{
-	position: relative;
-	margin-left: 1%;
-	display: flex;
-	flex-direction: row;
-}
+/**********
+*** Tête **
+***********/
 #logo{
 	width: 150px;
 	height: 70px;
 }
-div#pages{
-	width: 77%;
+.head{
+	margin-left: 1%;
 	display: flex;
-	justify-content: right;
+	flex-direction: row;
+}
+div#pages{
+    width: 50%;
+    display: flex;
+    justify-content: right;
 }
 ul#nav{
-	width: 30%;
-	height: 70px;
-	list-style: none;
-	display: flex;
-	font-weight: bold;
+    width: 60%;
+    height: 70px;
+    list-style: none;
+    display: flex;
+    font-weight: bold;
 }
 #nav li{
 	width: 150px;
@@ -72,7 +68,9 @@ span.insc{
 }
 /*champs recherche*
 *******************/
-
+.recherche{
+	position: relative;
+}
 #boutonRechercher{
 	color: white;
 	font-weight: bold;
@@ -88,6 +86,8 @@ span.insc{
 	position: relative;
 	display: flex;
 }
+/*recherche de ville*/
+
 ul#RechVille{
 	list-style: none;
 	display: flex;
@@ -107,7 +107,6 @@ ul#RechVille{
 /*Filtres*/
 
 div.filtres{
-	display: block;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
@@ -115,6 +114,8 @@ div.filtres{
 }
 #lesFiltres{
 	padding: 15px;
+	font-size: larger;
+	font-weight: bold;
 	text-align: center;
 }
 #choix{
@@ -164,7 +165,6 @@ span.nomFiltre{
 	padding-right: 19px;
 }
 .nb{
-	align-items: center;
 	height: 50px;
 	border-top: 20px;
 }
@@ -184,25 +184,34 @@ span.nomFiltre{
 .grise{
 	color: #F2F2F2;	
 }
+
 /***************
 **Hébergements**
 ***************/
-div#ville{
+section#ville{
 	display: flex;
 	justify-content: space-between;
 }
 .heberVille{
-	background-color: #F2F2F2;
-	border:5px solid white;
-	border-radius: 30px;
-	width: 60%;
-	padding: 30px;
-	overflow: auto;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 100%;
+    height: 615px;
+    padding: 30px;
+    overflow: auto;
 }
-.listeSpots{		
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-around;
+.listeSpots{	
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.populaireVille{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 100%;
+    height: 615px;
+    padding: 30px;
+    overflow: auto;
 }
 figure.hebergements{
 	position: relative;
@@ -406,100 +415,3 @@ li.type{
 li.page{
 	list-style: none;
 }
-
-/******************
-**Format tablette**
-*******************/
-/*
-@media screen and (max-width:  992px)
-{
-	h1{
-		color: red;
-		font-size: 130%;
-		font-weight:1000;	
-	}
-	div#pages{
-		width: 50%;
-		display: flex;
-		justify-content: right;
-	}
-	ul#nav{
-		width: 60%;
-		height: 70px;
-		list-style: none;
-		display: flex;
-		font-weight: bold;
-	}
-	.heberVille{
-		background-color: #F2F2F2;
-		border-radius: 30px;
-		width: 100%;
-		height: 615px;
-		padding: 30px;
-		overflow: auto;
-	}
-	.listeSpots{	
-		display: flex;
-		flex-wrap: wrap;
-		justify-content:space-between;
-	}
-	.populaireVille{
-		background-color: #F2F2F2;
-		border-radius: 30px;
-		width: 100%;
-		height: 615px;
-		padding: 30px;
-		overflow: auto;
-	}
-}
-/********************
-**Format smartphone**
-*********************/
-/*
-@media  (max-width: 768px)
-{
-	h1{
-		color: green;
-		font-size: 130%;
-		font-weight:1000;	
-	}
-	div.head{
-		margin-left: 1%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.head :nth-child(2) { order: 3; }
-	div#pages{
-		display: flex;
-		width: 100%;
-		justify-content: space-evenly;
-	}
-	
-	ul#nav{
-		height: 70px;
-		list-style: none;
-		display: flex;
-		font-weight: bold;
-	}
-	span.insc{
-		color: #0065FC;
-		height: 70px;
-		width: 60%;
-		padding-top: 33px;
-		text-align: right;
-	}
-	#boutonRechercher{
-		color: white;
-		font-weight: bold;
-		background-color: #0065FC;
-		border-radius: 15px 15px 15px 15px;
-		padding: 18px;
-		border: 0px;	
-	}
-	#loupe{
-		display: block;
-	}
-	#rechercher{
-		display: none;
-	}
-}*/

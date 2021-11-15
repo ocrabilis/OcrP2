@@ -1,0 +1,65 @@
+/**********************
+** Format smartphone **
+***********************/
+
+@font-face {
+	font-family: 'Raleway';
+    src: url('Raleway-VariableFont_wght.ttf') format('truetype');
+}
+*{
+	font-family: 'Raleway';
+	font-size: large;	
+}
+h1{
+    color: green;
+    font-size: 130%;
+    font-weight:1000;	
+}
+a:hover {
+	font-style: italic;
+}
+/*********
+** Tête **
+**********/
+#logo{
+	width: 150px;
+	height: 70px;
+}
+div.head{
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.head :nth-child(2) { order: 3; }
+div#pages{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+ul#nav{
+    height: 70px;
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+}
+span.insc{
+    color: #0065FC;
+    height: 70px;
+    width: 60%;
+    padding-top: 33px;
+    text-align: right;
+}
+#boutonRechercher{
+    color: white;
+    font-weight: bold;
+    background-color: #0065FC;
+    border-radius: 15px 15px 15px 15px;
+    padding: 18px;
+    border: 0px;	
+}
+#loupe{
+    display: block;
+}
+#rechercher{
+    display: none;
+}
