@@ -8,7 +8,7 @@
 }
 *{
 	font-family: 'Raleway';
-	font-size: large;	
+	font-size: 102%;	
 }
 h1{
 	font-size: 130%;
@@ -17,6 +17,9 @@ h1{
 h2{
 	font-size: 120%;
 	font-weight:900;	
+}
+a{
+	text-decoration: none;
 }
 a:hover {
 	font-style: italic;
@@ -41,14 +44,15 @@ div#pages{
 	justify-content: right;
 }
 ul#nav{
-	width: 30%;
+	width: 33%;
 	height: 70px;
 	list-style: none;
 	display: flex;
 	font-weight: bold;
+	padding-inline-start: unset;
 }
 #nav li{
-	width: 150px;
+	width: 50%;
 	padding-top: 33px;
 	text-align: center;
 }
@@ -68,20 +72,9 @@ span.insc{
 /*champs recherche*
 *******************/
 
-#boutonRechercher{
-	color: white;
-	font-weight: bold;
-	background-color: #0065FC;
-	border-radius: 0px 15px 15px 0px;
-	padding: 18px;
-	border: 0px;	
-}
+
 #loupe{
 	display: none;
-}
-#ville{
-	position: relative;
-	display: flex;
 }
 ul#RechVille{
 	list-style: none;
@@ -98,6 +91,14 @@ ul#RechVille{
 	font-weight: bold;
 	border: 3px solid #F2F2F2;
 	padding: 15px;
+}
+#boutonRechercher{
+	color: white;
+	font-weight: bold;
+	background-color: #0065FC;
+	border-radius: 0px 15px 15px 0px;
+	padding: 18px;
+	border: 0px;	
 }
 /*Filtres*/
 
@@ -213,6 +214,7 @@ figure.hebergements{
 }
 figure.hebergements img{
 	position: absolute;
+	object-fit: cover;
 	width: 300px;
 	height: 125px;
 }
@@ -241,7 +243,8 @@ div#titre{
 	justify-content: space-between;
 }
 
-.listPopu{	
+.listPopu{
+	justify-items: space-between;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -262,6 +265,7 @@ figure.populaires{
 }
 figure.populaires img{
 	position: absolute;
+	object-fit: cover;
 	height: 140px;
 	width: 135px;
 }
@@ -274,117 +278,123 @@ figcaption.textNoteDescipPopu{
 	height: 140px;
 	
 }
-div.textDescripPopu{
-
-
-}
 /************
 **Activités**
 *************/
-section#activitesVille{
-	height: 600px;
-	margin-top: 10px;
-	padding: 30px;
-}
+
 .listActiv{
 	display: flex;
 	flex-flow: column wrap;
+	align-content:space-around;
 	height: 600px;
+	overflow: auto;
 
 }
-figure.activite1{
+figure#activite1{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 500px;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure.activite1 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite1 img{	
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 450px;
 }
-figure.activite2{
+figure#activite2{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 270px;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure.activite2 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite2 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 220px;
 }
-figure.activite3{
+figure#activite3{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 200px;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure.activite3 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite3 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 150px;
 }
-figure.activite4{
+figure#activite4{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 260px;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure.activite4 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite4 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 210px;
 }
-figure.activite5{
+figure#activite5{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 220px;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure.activite5 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite5 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 170px;
 }
 figcaption.nomActi{
+	position: absolute;
 	padding: 5px;
 	font-weight: bolder;
+	bottom: 5px;
 }
 /*******
 **Pied**

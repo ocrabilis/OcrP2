@@ -11,6 +11,10 @@ h1{
     font-size: 130%;
     font-weight:1000;	
 }
+h2{
+	font-size: 120%;
+	font-weight:900;	
+}
 *{
 	font-family: 'Raleway';
 	font-size: large;	
@@ -30,18 +34,18 @@ main{
 	width: 150px;
 	height: 70px;
 }
-.head{
+div.head{
 	margin-left: 1%;
 	display: flex;
 	flex-direction: row;
 }
 div#pages{
-    width: 50%;
+    width: 77%;
     display: flex;
     justify-content: right;
 }
 ul#nav{
-    width: 60%;
+
     height: 70px;
     list-style: none;
     display: flex;
@@ -80,9 +84,6 @@ span.insc{
 #loupe{
 	display: none;
 }
-
-/*recherche de ville*/
-
 ul#RechVille{
 	list-style: none;
 	display: flex;
@@ -208,6 +209,7 @@ figure.hebergements{
 }
 figure.hebergements img{
 	position: absolute;
+	object-fit: cover;
 	width: 300px;
 	height: 125px;
 }
@@ -257,6 +259,7 @@ figure.populaires{
 }
 figure.populaires img{
 	position: absolute;
+	object-fit: cover;
 	height: 140px;
 	width: 135px;
 }
@@ -269,27 +272,20 @@ figcaption.textNoteDescipPopu{
 	height: 140px;
 	
 }
-div.textDescripPopu{
 
-
-}
 /************
 **Activités**
 *************/
-section#activitesVille{
-	height: 600px;
-	margin-top: 10px;
-	padding: 30px;
-}
+
 .listActiv{
 	display: flex;
 	flex-flow: column wrap;
+	align-content:space-around;
 	height: 600px;
 	overflow: auto;
-
-
 }
-figure.activite1{
+figure#activite1{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
@@ -298,16 +294,19 @@ figure.activite1{
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 500px;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure.activite1 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite1 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 450px;
 }
-figure.activite2{
+figure#activite2{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
@@ -316,16 +315,19 @@ figure.activite2{
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 270px;
+	overflow: hidden;
 	box-shadow:0px 20px 50px -40px;
 }
-figure.activite2 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite2 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 220px;
 }
-figure.activite3{
+figure#activite3{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px 30px;
@@ -334,16 +336,19 @@ figure.activite3{
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 200px;
+	overflow: hidden;
 	box-shadow:0px 20px 50px -40px;
 }
-figure.activite3 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite3 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 150px;
 }
-figure.activite4{
+figure#activite4{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
@@ -352,16 +357,19 @@ figure.activite4{
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 260px;
+	overflow: hidden;
 	box-shadow:0px 20px 50px -40px;
 }
-figure.activite4 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite4 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 210px;
 }
-figure.activite5{
+figure#activite5{
+	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
@@ -370,18 +378,22 @@ figure.activite5{
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 300px;
+	width: 23%;
 	height: 220px;
+	overflow: hidden;
 	box-shadow:0px 20px 50px -40px;
 }
-figure.activite5 img{
-	border-radius: 30px 30px 0 0;
-	width: 300px;
+figure#activite5 img{
+	position: absolute;
+	object-fit: cover;
+	width: 450px;
 	height: 170px;
 }
 figcaption.nomActi{
+	position: absolute;
 	padding: 5px;
 	font-weight: bolder;
+	bottom: 5px;
 }
 /*******
 **Pied**
