@@ -10,9 +10,15 @@
 	font-family: 'Raleway';
 	font-size: large;	
 }
+body{
+	width: 450px;
+	margin-left: auto;
+    margin-right: auto;
+}
 h1{
     font-size: 130%;
-    font-weight:1000;	
+    font-weight:1000;
+	margin-left: 20px;
 }
 h2{
 	font-size: 120%;
@@ -66,6 +72,7 @@ ul#nav{
     padding-bottom: 15px;
     width: 50%;
 	text-align: center;
+	border-bottom: 3px solid #F2F2F2;
 }
 #nav li.active{
     padding-bottom: 12px;
@@ -246,10 +253,12 @@ figcaption.descripHeber{
 /***************
 **Populaires****
 ***************/
+#stat{
+	margin-top: 20px;
+}
 .populaireVille{
 	background-color: #F2F2F2;
 	border:5px solid white;
-	border-radius: 30px;
 	padding: 2%;
 	overflow: auto;
 }
