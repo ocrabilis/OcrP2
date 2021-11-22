@@ -21,10 +21,23 @@ h2{
 a{
 	text-decoration: none;
 }
+a:-webkit-any-link{
+	color: unset;
+}
 a:hover {
 	font-style: italic;
 }
-
+a.cliquable:hover {
+	font-style: italic;
+	position: relative ;
+	bottom: 2px;
+	left: 2px;
+}
+a.cliquable{
+	display: block;
+	width:100%;
+	height:100%;
+}
 /*******
 **Tête**
 ********/
