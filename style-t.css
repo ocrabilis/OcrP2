@@ -8,7 +8,8 @@
 }
 h1{
     font-size: 130%;
-    font-weight:1000;	
+    font-weight:1000;
+	margin-left: 30px;
 }
 h2{
 	font-size: 120%;
@@ -20,10 +21,16 @@ h2{
 }
 a{
 	text-decoration: none;
-	color: #0065FC
+}
+a:-webkit-any-link {
+	color: unset;
 }
 a:hover {
 	font-style: italic;
+}
+a.cliquable{
+	display: block;
+	margin: 5px;
 }
 a.cliquable:hover {
 	font-style: italic;
@@ -31,14 +38,7 @@ a.cliquable:hover {
 	bottom: 2px;
 	left: 2px;
 }
-a:-webkit-any-link {
-		color: unset;
-}
-main{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-}
+
 /**********
 *** Tête **
 ***********/
@@ -99,6 +99,7 @@ span.insc{
 ul#RechVille{
 	list-style: none;
 	display: flex;
+	padding-inline-start: unset;
 }
 #iconeRecherche{	
 	color: black;
@@ -237,6 +238,18 @@ figcaption.descripHeber{
 /***************
 **Populaires****
 ***************/
+.cliquablePopu{
+	display: block;
+	width: 30%;
+	min-width: 380px;
+	margin: 5px;
+}
+.cliquablePopu:hover{
+	font-style: italic;
+	position: relative ;
+	bottom: 2px;
+	left: 2px;
+}
 .populaireVille{
 	background-color: #F2F2F2;
 	border:5px solid white;
@@ -250,6 +263,7 @@ div#titre{
 }
 
 .listPopu{	
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
@@ -266,7 +280,8 @@ figure.populaires{
 	margin-right: 0%;
 	margin-bottom: 0%;
 	height: 140px;
-	width: 370px;
+	width: 90%;
+	min-width: 380px;
 	overflow: hidden;
 }
 figure.populaires img{
@@ -280,7 +295,7 @@ figcaption.textNoteDescipPopu{
 	display: flex;
 	flex-direction:column;
 	justify-content: space-between;
-	padding-left: 140px;
+	padding-left: 150px;
 	height: 140px;
 	
 }
@@ -288,7 +303,20 @@ figcaption.textNoteDescipPopu{
 /************
 **Activités**
 *************/
-
+#activitesVille{
+	padding: 2%;
+}
+.cliquableActi{	
+	display: block;
+	width: 23%;
+	margin: 5px;
+}
+.cliquableActi:hover{
+	font-style: italic;
+	position: relative ;
+	bottom: 2px;
+	left: 2px;
+}
 .listActiv{
 	display: flex;
 	flex-flow: column wrap;
@@ -296,106 +324,101 @@ figcaption.textNoteDescipPopu{
 	height: 600px;
 	overflow: auto;
 }
-figure#activite1{
+figure.activite1{
 	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 23%;
+	width: 100%;
 	height: 500px;
 	box-shadow:0px 20px 50px -40px;
 	overflow: hidden;
 }
-figure#activite1 img{
+figure.activite1 img{	
 	position: absolute;
 	object-fit: cover;
 	width: 450px;
 	height: 450px;
 }
-figure#activite2{
+figure.activite2{
 	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 23%;
+	width: 100%;
 	height: 270px;
-	overflow: hidden;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure#activite2 img{
+figure.activite2 img{
 	position: absolute;
 	object-fit: cover;
 	width: 450px;
 	height: 220px;
 }
-figure#activite3{
+figure.activite3{
 	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 23%;
+	width: 100%;
 	height: 200px;
-	overflow: hidden;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure#activite3 img{
+figure.activite3 img{
 	position: absolute;
 	object-fit: cover;
 	width: 450px;
 	height: 150px;
 }
-figure#activite4{
+figure.activite4{
 	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 23%;
-	height: 260px;
-	overflow: hidden;
+	width: 100%;
+	height: 250px;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure#activite4 img{
+figure.activite4 img{
 	position: absolute;
 	object-fit: cover;
 	width: 450px;
-	height: 210px;
+	height: 200px;
 }
-figure#activite5{
+figure.activite5{
 	position: relative;
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 23%;
+	width: 100%;
 	height: 220px;
-	overflow: hidden;
 	box-shadow:0px 20px 50px -40px;
+	overflow: hidden;
 }
-figure#activite5 img{
+figure.activite5 img{
 	position: absolute;
 	object-fit: cover;
 	width: 450px;
