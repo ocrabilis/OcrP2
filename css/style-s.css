@@ -6,16 +6,22 @@
 	font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'Raleway-Bold';
+    src: url('Raleway-Bold.ttf') format('truetype');
+}
 *{
 	font-family: 'Raleway';
 }
 h1{
 	font-size: 140%;
-    font-weight:1000;
+	font-family:'Raleway-Bold';
+	font-weight: bolder;
 }
 h2{
 	font-size: 120%;
-	font-weight:900;	
+	font-family:'Raleway-Bold';
+	font-weight: bolder;	
 }
 a{
 	text-decoration: none;
@@ -102,6 +108,7 @@ span.insc{
 
 #loupe{
     display: block;
+	line-height: 17px;
 }
 #rechercher{
     display: none;
@@ -126,10 +133,12 @@ ul#RechVille{
 	border-radius: 15px 0px 0px 15px;
 	width: 20px;
 	padding: 20px;
-	line-height:21px;
+	line-height: 17px;
 }
 #champRecherche{
-	font-weight: bold;
+	font-family:'Raleway-Bold';
+	font-weight: bolder;
+	font-size: 110%;
 	border: 3px solid #F2F2F2;
 	width: 310px;
 	padding: 15px;
@@ -199,6 +208,8 @@ span.filtre:hover{
 	padding-bottom: 17px;
 }
 span.nomFiltre{
+	font-family:'Raleway-Bold';
+	font-weight: bold;
 	position: relative;
 	bottom: 3px;
 	padding-right: 19px;

@@ -6,18 +6,24 @@
 	font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'Raleway-Bold';
+    src: url('Raleway-Bold.ttf') format('truetype');
+}
 h1{
-    font-size: 130%;
-    font-weight:1000;
+    font-size: 150%;
+	font-family:'Raleway-Bold';
+	font-weight: bolder;
 	margin-left: 30px;
 }
 h2{
 	font-size: 120%;
-	font-weight:900;	
+	font-family:'Raleway-Bold';
+	font-weight: bold;
 }
 *{
 	font-family: 'Raleway';
-	font-size: large;	
+	font-size: 102%;	
 }
 a{
 	text-decoration: none;
@@ -109,7 +115,8 @@ ul#RechVille{
 	line-height:21px;
 }
 #champRecherche{
-	font-weight: bold;
+	font-family:'Raleway-Bold';
+	font-weight: bolder;
 	border: 3px solid #F2F2F2;
 	padding: 15px;
 }
@@ -168,6 +175,8 @@ span.filtre:hover{
 	padding-bottom: 17px;
 }
 span.nomFiltre{
+	font-family:'Raleway-Bold';
+	font-weight: bolder;
 	padding-right: 19px;
 }
 .nb{
@@ -193,7 +202,9 @@ span.nomFiltre{
 /***************
 **Hébergements**
 ***************/
-
+.trouver{
+    margin-left: 0px;
+}
 .heberVille{
     background-color: #F2F2F2;
 	border: 5px solid white;
