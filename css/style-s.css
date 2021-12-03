@@ -25,6 +25,7 @@ h2{
 }
 a{
 	text-decoration: none;
+	color: black;
 }
 a:hover {
 	font-style: italic;
@@ -44,12 +45,13 @@ a.cliquable{
 	height:100%;
 }
 body{
-	width: 470px;
+	width: 100%;
+	max-width: 430px;
 	margin-left: auto;
 	margin-right: auto;
 }
 main{
-	width: 450px;
+	width: 100%;
 	margin-left: auto;
     margin-right: auto;
 	display: flex;
@@ -93,7 +95,6 @@ ul#nav{
     padding-bottom: 12px;
 	border-bottom: 4px solid #0065FC;
 	color: #0065FC;
-
 }
 span.insc{
     color: #0065FC;
@@ -105,7 +106,6 @@ span.insc{
 }
 /*champs recherche*
 *******************/
-
 #loupe{
     display: block;
 	line-height: 17px;
@@ -140,7 +140,7 @@ ul#RechVille{
 	font-weight: bolder;
 	font-size: 110%;
 	border: 3px solid #F2F2F2;
-	width: 310px;
+	width: 100%;
 	padding: 15px;
 }
 /*Filtres*
@@ -230,8 +230,8 @@ span.nomFiltre{
 	padding-bottom: 4px;
 	padding-left: 10px;
 	margin-right: 15px;
-
-}/*étoiles*/
+}
+/*étoiles*/
 .bleue{
 	color:#0065FC;
 }
@@ -285,11 +285,11 @@ figure.populaires{
 	border-radius: 25px;
 	border:6px solid white;
 	margin-top: 20px;
-	margin-left: 2%;
-	margin-right: 3%;
+	margin-left: 0%;
+	margin-right: 0%;
 	margin-bottom: 0%;
 	height: 150px;
-	width: 390px;
+	width: 95%;
 	overflow: hidden;
 	box-shadow:0px 0px 50px -40px;
 }
@@ -335,7 +335,7 @@ figure.hebergements{
 	margin-right: 0%;
 	margin-bottom: 0%;
 	height: 200px;
-	width: 370px;
+	width: 95%;
 	overflow: hidden;
     box-shadow:0px 20px 50px -40px;
 }
@@ -353,9 +353,8 @@ figcaption.descripHeber{
 }
 .nomHeber{
 	display: inline-block;
-
 	margin-bottom: 5px;
-	font-size: 115%;
+	font-size: 110%;
 	font-weight: bolder;
 }
 /************
@@ -366,7 +365,7 @@ figcaption.descripHeber{
 }
 .cliquableActi{	
 	display: block;
-	width: 96%;
+	width: 95%;
 	margin: 5px;
 }
 .cliquableActi:hover{
@@ -386,23 +385,20 @@ figcaption.descripHeber{
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 400px;
+	width: 100%;
 	height: 180px;
 	box-shadow:0px 20px 50px -40px;
 	overflow: hidden;
 }
-
 .activite1 img, .activite2 img, .activite3 img, .activite4 img, .activite5 img{
 	position: absolute;
     object-fit: cover;
     width: 400px;
     height: 140px;
-
 }
 figcaption.nomActi{
 	position: absolute;
@@ -418,6 +414,7 @@ div#pied{
 	justify-content: space-evenly;
     margin-top: 20px;
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 li.type{
 	font-weight: bold;
