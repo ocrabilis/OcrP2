@@ -28,6 +28,7 @@ a{
 }
 a:hover {
 	font-style: italic;
+	color: black;
 }
 a:-webkit-any-link{
 	color: unset;
@@ -45,7 +46,8 @@ a.cliquable{
 }
 body{
 	width: 100%;
-	margin-left: 1%;
+	max-width: 430px;
+	margin-left: auto;
 	margin-right: auto;
 }
 main{
@@ -93,7 +95,6 @@ ul#nav{
     padding-bottom: 12px;
 	border-bottom: 4px solid #0065FC;
 	color: #0065FC;
-
 }
 span.insc{
     color: #0065FC;
@@ -105,7 +106,6 @@ span.insc{
 }
 /*champs recherche*
 *******************/
-
 #loupe{
     display: block;
 	line-height: 17px;
@@ -289,7 +289,6 @@ figure.populaires{
 	margin-right: 0%;
 	margin-bottom: 0%;
 	height: 150px;
-
 	width: 95%;
 	overflow: hidden;
 	box-shadow:0px 0px 50px -40px;
@@ -386,23 +385,20 @@ figcaption.descripHeber{
 	justify-content: center;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px;
 	margin-top: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-	width: 95%;
+	width: 100%;
 	height: 180px;
 	box-shadow:0px 20px 50px -40px;
 	overflow: hidden;
 }
-
 .activite1 img, .activite2 img, .activite3 img, .activite4 img, .activite5 img{
 	position: absolute;
     object-fit: cover;
     width: 400px;
     height: 140px;
-
 }
 figcaption.nomActi{
 	position: absolute;
