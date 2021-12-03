@@ -285,8 +285,8 @@ figure.populaires{
 	border-radius: 25px;
 	border:6px solid white;
 	margin-top: 20px;
-	margin-left: 2%;
-	margin-right: 3%;
+	margin-left: 0%;
+	margin-right: 0%;
 	margin-bottom: 0%;
 	height: 150px;
 
@@ -336,7 +336,6 @@ figure.hebergements{
 	margin-right: 0%;
 	margin-bottom: 0%;
 	height: 200px;
-
 	width: 95%;
 	overflow: hidden;
     box-shadow:0px 20px 50px -40px;
@@ -355,9 +354,8 @@ figcaption.descripHeber{
 }
 .nomHeber{
 	display: inline-block;
-
 	margin-bottom: 5px;
-	font-size: 115%;
+	font-size: 110%;
 	font-weight: bolder;
 }
 /************
@@ -393,7 +391,6 @@ figcaption.descripHeber{
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 0%;
-
 	width: 95%;
 	height: 180px;
 	box-shadow:0px 20px 50px -40px;
